@@ -52,18 +52,22 @@ cypress/
 
 ---
 
-Project Roadmap
-	•	✅ One-click smoke test generation
-	•	🔄 DOM tag injector bot — in development (GhostShip tagging engine)
-	•	🔍 PR code analyzer — classify changes: frontend, backend, config
-	•	🧠 AI test suggestion engine — static + AI-assisted heuristics
-	•	🧪 CI automation — GitHub Actions + classification triggers
-	•	🧼 GUI Installer Wizard — for non-terminal workflows
-	•	🧠 Smart TestGhost features
-	•	🔧 Auto-generate missing test stubs (with approval prompt)
-	•	🧭 Detect similar test logic across codebase to prevent redundancy
-	•	🤖 Future: AI-based test writing and reasoning
+## 🚧 Project Roadmap
 
+### ✅ Core Features
+- **One-click smoke test generation**  
+- **DOM tag injector bot** — *(in development)* using the GhostShip tagging engine  
+- **PR code analyzer** — classify changes: `frontend`, `backend`, `config`
+
+### 🧠 AI & Smart Tools
+- **AI test suggestion engine** — static + AI-assisted heuristics  
+- **Auto-generate missing test stubs** — prompts you for approval  
+- **Detect redundant tests** — scans codebase for similar logic  
+- *Future:* Full AI-based test writing & reasoning
+
+### 🔁 CI / DX Integration
+- **CI automation** — GitHub Actions + test classification triggers  
+- **GUI Installer Wizard** — built for non-terminal workflows  
 
 ---
 
