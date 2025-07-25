@@ -75,22 +75,24 @@ cypress/
 
 SmokeBot+ is just one agent in a growing fleet:
 
-### TestGhost
+## 👻 TestGhost
 
-	-	CI-native orchestrator that watches pull requests
-	- Detects test coverage gaps in real-time
-	- Posts actionable PR comments (e.g. “missing tests in PaymentForm.jsx”)
-	- Works across Cypress, unit, API, and GraphQL layers
-	- Can optionally auto-generate test scaffolds (and ask for approval before committing)
-	- Scans your codebase for existing similar components/tests to avoid redundancy
-	- Future support for AI-assisted test reasoning and smart suggestions
+- **CI-native orchestrator** that watches pull requests  
+- Detects test coverage gaps in real-time  
+- Posts actionable PR comments (e.g. “missing tests in PaymentForm.jsx”)  
+- Works across Cypress, unit, API, and GraphQL layers  
+- Optionally auto-generates test scaffolds (asks for approval before committing)  
+- Scans codebase for existing similar components/tests to avoid redundancy  
+- *Future:* AI-assisted test reasoning and smart suggestions  
 
-### GhostShip
+---
+
+## 🧠 GhostShip
 
 - DOM-tagging and component-recognition engine  
 - Injects structured `data-*` tags into form fields, buttons, headers, and other testable elements  
-- Maps these elements back to source components, with optional IDE hooks  
--	Future support for VS Code, other popular IDEs, and CLI tooling.
+- Maps elements back to source components with optional IDE hooks  
+- *Future:* Support for VS Code, other IDEs, and CLI tooling  
 
 Together, they form the **TestGhost Ecosystem** — modular QA bots that whisper sweet coverage dreams into your CI pipelines.
 
