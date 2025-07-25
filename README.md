@@ -75,7 +75,7 @@ cypress/
 
 SmokeBot+ is just one agent in a growing fleet:
 
-## 👻 TestGhost
+## TestGhost
 
 - **CI-native orchestrator** that watches pull requests  
 - Detects test coverage gaps in real-time  
@@ -87,7 +87,7 @@ SmokeBot+ is just one agent in a growing fleet:
 
 ---
 
-## 🧠 GhostShip
+## GhostShip
 
 - DOM-tagging and component-recognition engine  
 - Injects structured `data-*` tags into form fields, buttons, headers, and other testable elements  
