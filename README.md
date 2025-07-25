@@ -52,14 +52,18 @@ cypress/
 
 ---
 
-## Project Roadmap
+Project Roadmap
+	•	✅ One-click smoke test generation
+	•	🔄 DOM tag injector bot — in development (GhostShip tagging engine)
+	•	🔍 PR code analyzer — classify changes: frontend, backend, config
+	•	🧠 AI test suggestion engine — static + AI-assisted heuristics
+	•	🧪 CI automation — GitHub Actions + classification triggers
+	•	🧼 GUI Installer Wizard — for non-terminal workflows
+	•	🧠 Smart TestGhost features
+	•	🔧 Auto-generate missing test stubs (with approval prompt)
+	•	🧭 Detect similar test logic across codebase to prevent redundancy
+	•	🤖 Future: AI-based test writing and reasoning
 
-- ✅ One-click smoke test generation  
-- 🔄 DOM tag injector bot – in development (GhostShip tagging engine)  
-- 🔍 PR code analyzer – classify changes: frontend, backend, config  
-- 🧠 AI test suggestion engine – static + AI-assisted  
-- 🧪 Auto-run in CI – GitHub Actions + classification triggers  
-- 🧼 GUI Installer Wizard – for non-terminal workflows  
 
 ---
 
@@ -69,17 +73,20 @@ SmokeBot+ is just one agent in a growing fleet:
 
 ### TestGhost
 
-- CI-native orchestrator that watches pull requests  
-- Detects test coverage gaps in real-time  
-- Posts actionable PR comments (e.g. “missing tests in PaymentForm.jsx”)  
-- Works across Cypress, unit, API, and GraphQL layers  
+	-	CI-native orchestrator that watches pull requests
+	- Detects test coverage gaps in real-time
+	- Posts actionable PR comments (e.g. “missing tests in PaymentForm.jsx”)
+	- Works across Cypress, unit, API, and GraphQL layers
+	- Can optionally auto-generate test scaffolds (and ask for approval before committing)
+	- Scans your codebase for existing similar components/tests to avoid redundancy
+	- Future support for AI-assisted test reasoning and smart suggestions
 
 ### GhostShip
 
 - DOM-tagging and component-recognition engine  
 - Injects structured `data-*` tags into form fields, buttons, headers, and other testable elements  
 - Maps these elements back to source components, with optional IDE hooks  
-- Future support for VS Code integration and CLI tooling  
+-	Future support for VS Code, other popular IDEs, and CLI tooling.
 
 Together, they form the **TestGhost Ecosystem** — modular QA bots that whisper sweet coverage dreams into your CI pipelines.
 
