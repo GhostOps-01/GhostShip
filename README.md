@@ -1,103 +1,71 @@
-> Whether you’re pushing React, Node, GraphQL, or anything in between — **GhostShip** hunts down what matters and prepares your code for battle.
+# 🛠️ GhostShip — Test Intelligence Engine
 
-# GhostShip
+**GhostShip** is the modular heart of the TestGhost ecosystem — a test readiness engine that injects structure, visibility, and intelligence into your QA stack. It’s not just a repo — it’s a launchpad for every QA innovation we ship.
 
-GhostShip is your all-in-one test readiness engine — mapping components, injecting `data-*` tags, scanning PRs for missing test coverage, and scaffolding test logic across frontend and backend systems.
-
-It’s the core of a bigger mission: making QA faster, smarter, and automatic — from DOM tagging to CI test audits.
+Whether you’re working with React, GraphQL, or bare metal — GhostShip makes your code testable, trackable, and CI-ready.
 
 ---
 
-## SmokeBot+ | Ultra-Lightweight AI-Powered Cypress Framework
+## ✅ Core Mission
 
-A prototype from the TestGhost ecosystem – featuring modular agents like GhostShip and SmokeBot+.
-
-### What is SmokeBot+?
-
-SmokeBot+ is a plug-and-play, zero-config Cypress automation framework powered by AI-driven heuristics. It’s designed to generate full-stack smoke tests from a single URL input — ideal for QA engineers, devs, and testers who want instant feedback on the health of any webpage, from header to footer.
-
-### Why SmokeBot+?
-
-- **Instant Setup** – One command installs and configures Cypress, generates your first test, and drops it into your suite  
-- **Full-Page Awareness** – Uses static heuristics (and eventually, AI vision) to find common structure points like headers, footers, CTAs, and form fields  
-- **Modular Intelligence** – Part of the GhostShip framework – a growing collection of task-specific QA agents (e.g. DOM taggers, test suggesters, CI analyzers)  
-- **CI-Ready by Design** – Built for GitHub integration, future PR scanning, and smart test routing  
+- 🔍 **Map and tag UI elements** with precision using our DOM tagging utilities
+- 🧠 **Analyze PRs** and classify changes for smarter test selection
+- ⚙️ **Scaffold test logic** automatically with optional AI-assisted tools
+- 🔌 **Plug into any stack** — CI, GitHub, Cypress, Postman, etc.
+- 🛠️ **Power your internal QA agents**, from data-tag injectors to test runners
 
 ---
 
-## Getting Started
+## 📦 Modules (Inside GhostShip)
 
-### With `npx`:
+- **SmokeBot+**  
+  Generates zero-config Cypress smoke tests from a single URL  
+  → `tools/smokebot_plus`
 
-```
-npx smokebot+ init
-```
+- **ScrapeTag** *(in development)*  
+  Parses JSX/HTML and injects `data-test` tags into DOM elements  
+  → `tools/scrapetag`
 
-### Or manually:
+- **PR Classifier** *(coming soon)*  
+  Analyzes diffs and classifies scope: frontend / backend / config  
+  → `tools/classifier`
 
-```
-git clone https://github.com/YOURNAME/smokebot_plus.git
-cd smokebot_plus
-npm install
-npm run smokebot -- https://yourtargeturl.com
-```
+---
 
-This generates:
+## 🌊 Why GhostShip?
 
-```
-cypress/
-  └── e2e/
-      └── generated_smoketest.cy.js
+- ✅ Modular architecture
+- ✅ CI-native integration
+- ✅ AI-assist tooling (planned)
+- ✅ Perfect for both startups and enterprise stacks
+
+GhostShip isn’t a single tool — it’s a **fleet**.
+
+---
+
+## 🚀 Usage
+
+Each tool in the `/tools/` folder has its own README and CLI command structure. Clone the repo and dive into any module:
+
+```bash
+git clone https://github.com/YOURNAME/ghostship.git
+cd ghostship/tools/smokebot_plus
+npx smokebot+ https://yourdomain.com
 ```
 
 ---
 
-## 🚧 Project Roadmap
+## 📚 Part of the TestGhost Ecosystem
 
-### ✅ Core Features
-- **One-click smoke test generation**  
-- **DOM tag injector bot** — *(in development)* using the GhostShip tagging engine  
-- **PR code analyzer** — classify changes: `frontend`, `backend`, `config`
+GhostShip is one node in a larger system:
 
-### 🧠 AI & Smart Tools
-- **AI test suggestion engine** — static + AI-assisted heuristics  
-- **Auto-generate missing test stubs** — prompts you for approval  
-- **Detect redundant tests** — scans codebase for similar logic  
-- *Future:* Full AI-based test writing & reasoning
-
-### 🔁 CI / DX Integration
-- **CI automation** — GitHub Actions + test classification triggers  
-- **GUI Installer Wizard** — built for non-terminal workflows  
+- **TestGhost** – QA consulting engine and CI-native orchestrator
+- **BuildGhost** – Test suite scaffolding CLI
+- **SmokeBot+** – Zero-config Cypress smoke test generator
+- **ScrapeTag** – DOM attribute injector for test stability
 
 ---
 
-## GhostShip & TestGhost – Coming Soon
+## 🧪 License
 
-SmokeBot+ is just one agent in a growing fleet:
-
-## TestGhost
-
-- **CI-native orchestrator** that watches pull requests  
-- Detects test coverage gaps in real-time  
-- Posts actionable PR comments (e.g. “missing tests in PaymentForm.jsx”)  
-- Works across Cypress, unit, API, and GraphQL layers  
-- Optionally auto-generates test scaffolds (asks for approval before committing)  
-- Scans codebase for existing similar components/tests to avoid redundancy  
-- *Future:* AI-assisted test reasoning and smart suggestions  
-
----
-
-## GhostShip
-
-- DOM-tagging and component-recognition engine  
-- Injects structured `data-*` tags into form fields, buttons, headers, and other testable elements  
-- Maps elements back to source components with optional IDE hooks  
-- *Future:* Support for VS Code, other IDEs, and CLI tooling  
-
-Together, they form the **TestGhost Ecosystem** — modular QA bots that whisper sweet coverage dreams into your CI pipelines.
-
----
-
-## License
-
-MIT. Credit appreciated. Praise optional. Respect mandatory.
+MIT – Because great QA isn’t luck. It’s strategy.
