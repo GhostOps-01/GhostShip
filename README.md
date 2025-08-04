@@ -18,7 +18,7 @@ Whether you’re working with React, GraphQL, or bare metal — GhostShip makes 
 
 ## 📦 Modules (Inside GhostShip)
 
-- **SmokeBot+**  
+- **SmokeBot+** *(in development)* 
   Generates zero-config Cypress smoke tests from a single URL  
   → `tools/smokebot_plus`
 
